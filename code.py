@@ -25,6 +25,9 @@ sharedIPCounter = 0;
 fileCounterIndex = 0;
 
 filenames = ["capture1.pcap", "capture2.pcap", "capture3.pcap", "capture4.pcap", "capture5.pcap", "capture6.pcap", "capture7.pcap", "capture8.pcap", "capture9.pcap", "capture10.pcap"]
+folder = "Packet Captures/"
+for i in range(len(filenames)):
+    filenames[i] = folder + filenames[i]
 
 destinationIPs = set()
 sharedIPs = set()
